@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 SELECT ORDER_NUM,
 PURCHASE_AMT,ORDER_DATE,
 CUSTOMER_ID,

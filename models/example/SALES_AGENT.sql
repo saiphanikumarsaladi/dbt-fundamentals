@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 SELECT SALES_AGENT_ID,
 NAME,
 CITY,

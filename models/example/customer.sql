@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 select CUSTOMER_ID,
 CUST_NAME,
 CITY,
