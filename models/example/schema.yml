@@ -19,3 +19,10 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: final
+      description: "data of agent"
+      columns:
+          - name: SALES_AGENT_ID
+            tests:
+                - unique
+                - not_null
