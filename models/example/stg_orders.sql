@@ -1,5 +1,6 @@
+{{ config(materialized='view') }}
 with orderSS as (
-        select 
+        select
           ORDER_NUM,
           PURCHASE_AMT,
           ORDER_DATE,

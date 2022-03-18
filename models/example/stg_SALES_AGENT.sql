@@ -1,6 +1,7 @@
+{{ config(materialized='view') }}
 with SALES_AGENTS as (
 
-    SELECT 
+    SELECT
        SALES_AGENT_ID,
        NAME,
        CITY,

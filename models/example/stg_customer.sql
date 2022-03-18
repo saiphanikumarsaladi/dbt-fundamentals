@@ -1,6 +1,7 @@
+{{ config(materialized='view') }}
 WITH CUSTOMERS as (
 
-   SELECT 
+   SELECT
      CUSTOMER_ID,
      CUST_NAME,
      CITY,

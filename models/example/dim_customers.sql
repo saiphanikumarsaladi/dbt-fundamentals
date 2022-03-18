@@ -1,21 +1,18 @@
 {{ config(materialized='view') }}
 with SALES_AGENTS as (
 
-    SELECT * 
-    FROM {{ ref('SALES_AGENT') }}
+    SELECT * FROM {{ ref('stg_SALES_AGENT') }}
     
 ),
 
 CUSTOMERS as (
 
-   SELECT *
-   FROM {{ ref('customer') }}
+   SELECT * FROM {{ ref('stg_customer') }}
    
 ),
 
 orderSS as (
-        select *
-        from {{ ref('orders') }}
+        select * from {{ ref('stg_orders') }}
 ),
 
 final as (
